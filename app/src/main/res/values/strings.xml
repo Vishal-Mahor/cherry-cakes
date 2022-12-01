@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">cherrycakes</string>
+
+    <string-array name="country_code">
+        <item>+91 </item>
+        <item>+92 </item>
+        <item>+93 </item>
+        <item>+94 </item>
+        <item>+95 </item>
+        <item>+96 </item>
+        <item>+97 </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Rs">\u20B9</string>
+
+</resources>

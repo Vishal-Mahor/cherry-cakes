@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/platinum"
+    tools:context=".HeaderActivity">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:background="@color/platinum"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/header_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cherry Cakes"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/header_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CherryCakes@gmail.com"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

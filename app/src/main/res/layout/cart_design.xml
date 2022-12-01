@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="0"
+        android:layout_margin="10dp"
+        android:background="@color/platinum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/card_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/price_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Qty:"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    />
+
+                <ImageView
+                    android:id="@+id/delete_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:elevation="10dp"
+                    android:src="@drawable/ic_baseline_delete_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

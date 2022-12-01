@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".locationActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_sapphire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/back_to_home"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_navigate_before_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Latitude: "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/latitudes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Longitude: "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/longitudes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Address: "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/locality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Locality: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/localitys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Country: "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/country1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btngetloc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Get Location"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

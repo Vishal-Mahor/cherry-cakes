@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/ic_baseline_shopping_bag_24"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/account"
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Logout" />
+    </group>
+</menu>

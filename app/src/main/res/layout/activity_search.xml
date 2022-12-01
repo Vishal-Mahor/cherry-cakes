@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_sapphire"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_to_home_from_search"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_navigate_before_24" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_margin="15dp"
+        android:background="@drawable/sp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        android:searchHintIcon="@drawable/ic_baseline_search_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/grid_design"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/grid_design_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:padding="1dp" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

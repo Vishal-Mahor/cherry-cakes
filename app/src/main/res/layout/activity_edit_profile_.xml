@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/platinum"
+    tools:context=".edit_profile_Activity">
+
+    <LinearLayout
+        android:id="@+id/back_to_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintVertical_bias="0"
+        android:background="@color/blue_sapphire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_navigate_before_24" />
+        <TextView
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_to_home"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/txts_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:background="@drawable/sp"
+        android:hint="Name"
+        android:padding="15dp"
+        app:layout_constraintVertical_bias="0.1"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/txts_email"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/sp"
+        android:hint="Email-Address"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txts_name"
+        app:layout_constraintVertical_bias="0"/>
+
+    <EditText
+        android:id="@+id/txts_mobile"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="number"
+        android:background="@drawable/sp"
+        android:hint="Mobile No."
+        android:singleLine="true"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txts_email" />
+
+    <EditText
+        android:id="@+id/txts_Address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/sp"
+        android:hint="Address"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txts_mobile" />
+
+    <EditText
+        android:id="@+id/txts_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:background="@drawable/sp"
+        android:hint="Pin Code"
+        android:singleLine="true"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txts_Address"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/verify_nos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Mobile No.*"
+        android:layout_marginTop="5dp"
+        app:layout_constraintVertical_bias="0.09"
+        android:elevation="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/blue_sapphire"
+        app:layout_constraintBottom_toTopOf="@+id/txts_Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txts_mobile" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintTop_toBottomOf="@+id/txts_pincode">
+
+        <Button
+            android:id="@+id/update_profile"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:elevation="10dp"
+            android:text="Update Profile"
+            android:background="@drawable/button"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
